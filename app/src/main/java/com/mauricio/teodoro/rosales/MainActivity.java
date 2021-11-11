@@ -2,30 +2,33 @@ package com.mauricio.teodoro.rosales;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Button buttonSuma;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        buttonSuma = findViewById(R.id.buttonSuma );
+        buttonSuma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirSuma( );
+            }
+        });
     }
 
-    public void Suma(View miView){
-
+    private void abrirSuma() {
+        Intent intent = new Intent( this , SumaActivity.class );
+        startActivity( intent );
     }
 
-    public void Resta(View miView){
 
-    }
 
-    public void Multiplicacion(View miView){
-
-    }
-
-    public void Divicion(View miView){
-
-    }
 }
