@@ -12,11 +12,25 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/editTextNumberX"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="76dp"
             android:ems="10"
             android:inputType="number" />
-    </LinearLayout>
 
+        <EditText
+            android:id="@+id/editTextNumberY"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumberTotal"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:inputType="number" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

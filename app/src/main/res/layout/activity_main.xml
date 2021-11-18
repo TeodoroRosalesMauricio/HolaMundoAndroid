@@ -12,29 +12,29 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/buttonSuma"
-            android:layout_width="wrap_content"
+            android:id="@+id/Button_suma"
+            android:layout_width="163dp"
             android:layout_height="wrap_content"
             android:text="Suma" />
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
+            android:id="@+id/Button_resta"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="resta" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/Button_multiplicacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="multiplicación" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/Button_division"
+            android:layout_width="162dp"
             android:layout_height="wrap_content"
-            android:text="Hello World!" />
+            android:text="división" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
