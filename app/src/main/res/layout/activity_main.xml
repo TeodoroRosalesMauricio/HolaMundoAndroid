@@ -35,6 +35,12 @@
             android:layout_height="wrap_content"
             android:text="división" />
 
+        <Button
+            android:id="@+id/Button_watts"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:text="Kilowatts a Watts" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

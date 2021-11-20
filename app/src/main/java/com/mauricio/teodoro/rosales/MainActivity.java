@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Button_resta;
     private Button Button_division;
     private Button Button_multiplicacion;
+    private Button Button_watts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         Button_resta = findViewById(R.id.Button_resta);
         Button_multiplicacion = findViewById(R.id.Button_multiplicacion);
         Button_division = findViewById(R.id.Button_division);
+        Button_watts = findViewById(R.id.Button_watts);
 
         Button_suma.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button_watts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirWatts();
+            }
+        });
+
     }
 
     private void abrirSuma() {
@@ -79,6 +88,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirDivision() {
         Intent intent = new Intent(this , DivicionActivity.class);
+        startActivity(intent);
+    }
+
+    private void abrirWatts() {
+        Intent intent = new Intent(this , WattsActivity.class);
         startActivity(intent);
     }
 }
